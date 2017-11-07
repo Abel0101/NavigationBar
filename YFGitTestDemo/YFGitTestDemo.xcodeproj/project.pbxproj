@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C1D9B00D0EBC4E279398461 /* libPods-YFGitTestDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46CF63E6838DE28DF17F31B5 /* libPods-YFGitTestDemo.a */; };
 		A25A43261FB1574E001791AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A25A43251FB1574E001791AB /* AppDelegate.m */; };
 		A25A43291FB1574E001791AB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A25A43281FB1574E001791AB /* ViewController.m */; };
 		A25A432C1FB1574E001791AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A25A432A1FB1574E001791AB /* Main.storyboard */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24B3D164DB0C770E300DEFD9 /* Pods-YFGitTestDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YFGitTestDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YFGitTestDemo/Pods-YFGitTestDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		46CF63E6838DE28DF17F31B5 /* libPods-YFGitTestDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YFGitTestDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		823789790D0AD37EEFFC5338 /* Pods-YFGitTestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YFGitTestDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-YFGitTestDemo/Pods-YFGitTestDemo.release.xcconfig"; sourceTree = "<group>"; };
 		A25A43211FB1574E001791AB /* YFGitTestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YFGitTestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A25A43241FB1574E001791AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A25A43251FB1574E001791AB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -36,18 +40,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C1D9B00D0EBC4E279398461 /* libPods-YFGitTestDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B4A9AD91CE311492118D25E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24B3D164DB0C770E300DEFD9 /* Pods-YFGitTestDemo.debug.xcconfig */,
+				823789790D0AD37EEFFC5338 /* Pods-YFGitTestDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A25A43181FB1574E001791AB = {
 			isa = PBXGroup;
 			children = (
 				A25A433A1FB16600001791AB /* UIImageEx */,
 				A25A43231FB1574E001791AB /* YFGitTestDemo */,
 				A25A43221FB1574E001791AB /* Products */,
+				3B4A9AD91CE311492118D25E /* Pods */,
+				D6C108A23C149A0B3CB3C0AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +100,14 @@
 			path = UIImageEx;
 			sourceTree = "<group>";
 		};
+		D6C108A23C149A0B3CB3C0AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46CF63E6838DE28DF17F31B5 /* libPods-YFGitTestDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A25A43371FB1574E001791AB /* Build configuration list for PBXNativeTarget "YFGitTestDemo" */;
 			buildPhases = (
+				5892523DFC9B4681C75D3AFB /* [CP] Check Pods Manifest.lock */,
 				A25A431D1FB1574E001791AB /* Sources */,
 				A25A431E1FB1574E001791AB /* Frameworks */,
 				A25A431F1FB1574E001791AB /* Resources */,
+				DA878681553D002D31806A4A /* [CP] Embed Pods Frameworks */,
+				B4A64793D45E30A380A5C185 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,6 +176,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5892523DFC9B4681C75D3AFB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YFGitTestDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4A64793D45E30A380A5C185 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YFGitTestDemo/Pods-YFGitTestDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA878681553D002D31806A4A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YFGitTestDemo/Pods-YFGitTestDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A25A431D1FB1574E001791AB /* Sources */ = {
@@ -290,6 +368,7 @@
 		};
 		A25A43381FB1574E001791AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24B3D164DB0C770E300DEFD9 /* Pods-YFGitTestDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +382,7 @@
 		};
 		A25A43391FB1574E001791AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 823789790D0AD37EEFFC5338 /* Pods-YFGitTestDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
