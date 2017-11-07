@@ -11,11 +11,11 @@ Pod::Spec.new do |s|
 
   s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
-  s.author             = { "竹香" => "2603443950@qq.com" }
+  s.author       = { "竹香" => "2603443950@qq.com" }
  
   s.source       = { :git => "https://github.com/Abel0101/NavigationBar.git", :tag => s.version }
 
 
-  s.source_files  =  "YFGitTestDemo/UIImageEx/*.{h,m}"
+  s.source_files  =  "YFGitTestDemo/UIImageEx/*"
 
 end
