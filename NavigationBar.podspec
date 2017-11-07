@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 
   s.license      = { :type => "MIT", :file => "LICENSE" }
 
-  s.author       = { "竹香" => "2603443950@qq.com" }
+  s.author       = { "Abel" => "1171687403@qq.com" }
  
   s.source       = { :git => "https://github.com/Abel0101/NavigationBar.git", :tag => s.version }
 
