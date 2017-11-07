@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.author             = { "竹香" => "2603443950@qq.com" }  #作者
   s.platform     = :ios, "9.0"                  #支持的平台和版本号
   s.source       = { :git => "https://github.com/Abel0101/NavigationBar.git", :tag => "0.0.1" }         
-  s.source_files  =  "UINavigationBarEx/**/*.{h,m}" #需要托管的源代码路径
+  s.source_files  =  "UIImageEx/**/*.{h,m}" #需要托管的源代码路径
   s.requires_arc = true #是否支持ARC
   
 
