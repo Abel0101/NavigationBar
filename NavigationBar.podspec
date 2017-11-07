@@ -16,6 +16,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/Abel0101/NavigationBar.git", :tag => s.version }
 
 
-  s.source_files  =  "UIImageEx/**/*"
+  s.source_files  =  "UIImageEx/*.{h,m}"
 
 end
