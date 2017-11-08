@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/Abel0101/NavigationBar.git", :tag => s.version }
 
   s.requires_arc = true;
-  s.source_files  =  'Class/*'
+  s.source_files  =  'Class'
   
 
 end
