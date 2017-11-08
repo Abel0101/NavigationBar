@@ -13,10 +13,10 @@ Pod::Spec.new do |s|
 
   s.author       = { "Abel" => "1171687403@qq.com" }
  
-  s.source       = { :git => "https://github.com/Abel0101/NavigationBar/YFGitTestDemo.git", :tag => s.version }
+  s.source       = { :git => "https://github.com/Abel0101/NavigationBar.git", :tag => s.version }
 
   s.requires_arc = true;
-  s.source_files  = 'UIImageEx', 'UIImageEx/**/*.{h,m}'
+  s.source_files  = 'YFGitTestDemo/UIImageEx/**/*.{h,m}'
   
 
 end
