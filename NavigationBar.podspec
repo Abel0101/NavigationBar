@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/Abel0101/NavigationBar.git", :tag => s.version }
 
   s.requires_arc = true;
-  s.source_files  =  'YFGitTestDemo/UIImageEx/**/*.{h,m}'
-  s.framework  = 'UIKit','Foundation'
+  s.source_files  =  'Class/**/*.{h,m}'
+  
 
 end
