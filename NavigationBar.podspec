@@ -17,6 +17,6 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true;
   s.source_files  =  'YFGitTestDemo/UIImageEx/**/*.{h,m}'
-  s.framework  = 'UIKit','Foundation'
+  s.framework  = 'UIKit/UIKit.h','Foundation'
 
 end
